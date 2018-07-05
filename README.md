@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
     }
     
     # 公开头文件 打包只公开特定的头文件
-#    s.public_header_files = 'Lib/Classes/Head/SOCR.h,Lib/Classes/Head/Lib.h,'
+#    s.public_header_files = 'Lib/Classes/Head/SOCR.h,Lib/Classes/Head/Lib.h'
     #  调试公开所有的头文件 这个地方下面的头文件 如果是在Example中调试 就公开全部，需要打包就只公开特定的h文件
     s.public_header_files = 'Pod/Classes/**/*.h'
     #  私有头文件  
