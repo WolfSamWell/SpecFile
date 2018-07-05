@@ -1,10 +1,3 @@
-# SpecFile
-一个可公开的Spec文件。一些Spec中语法的含义  和在使用pod package打包静态库时遇到的问题。
-
-
-
- 
-```
 #
 # Be sure to run `pod lib lint Lib.podspec' to ensure this is a
 # valid spec before submitting.
@@ -87,28 +80,3 @@ Pod::Spec.new do |s|
 
 
 end
-
-```
-
-
-
-# pod package使用中遇到的问题及解决办法
-
-pod package 是一个开源的打包工具，和CocoaPods使用起来十分的便捷。[pod package](https://github.com/CocoaPods/cocoapods-packager) 能解决在打包的同时使用了开源框架重复的问题。
-
-如何使用pod package见Bryce Zhang大佬的这篇博客，[Bryce Zhang](http://www.cnblogs.com/brycezhang/p/4117180.html).后面对大佬的博客做一点点补充。
-
-1. 在使用别人的framework打自己的framework时，最后打出来发现是报错的，需要把别人的framework一起和自己的加到工程中。
-2. 在第三方的framework的设置需要在spec中也同样设置好，在打包之后使用的工程中也同样需要设置
-3. 是否是静态库的开关， 在spec文件中一定要有 否则打出来的库是跑不起来的
-4. 打framework的命令在下面
- 
- `pod package 名称.podspec --force --no-mangle --embedded
- `
- 
- 
- 
- 
-
-    
-
