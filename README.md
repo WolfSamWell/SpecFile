@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     # 作者信息 及邮箱
     s.author           = { 'wolfgang' => 'XXXXX@mail.com' }
     # spec 配置文件的位置
-    s.source           = { :git => '/Users/Documents/Sand_JZ/SOCRLib', :tag => s.version.to_s }
+    s.source           = { :git => '/Users/Documents/Sand_JZ/Lib', :tag => s.version.to_s }
     # 媒体文件
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     #工程依赖系统版本
