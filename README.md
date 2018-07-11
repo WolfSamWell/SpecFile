@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
          描述信息，这个描述信息一定要比s.summary的内容长。
                        DESC
     # 主页信息网址
-    s.homepage         = 'https://github.com/pwgang@foxmail.com/SOCRLib'
+    s.homepage         = 'https://github.com/XXXXXXXXXXX'
     # 截图地址
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     # 证书 一般用下面的格式 如果用了其他的格式 需要相应的修改
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     # 作者信息 及邮箱
     s.author           = { 'wolfgang' => 'XXXXX@mail.com' }
     # spec 配置文件的位置
-    s.source           = { :git => '/Users/panwg/Documents/Sand_JZ/SOCRLib', :tag => s.version.to_s }
+    s.source           = { :git => '/Users/Documents/Sand_JZ/SOCRLib', :tag => s.version.to_s }
     # 媒体文件
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     #工程依赖系统版本
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
 
     # 资源文件 有几个写几个
     s.resource_bundles = {
-     'SOCRLib' => ['Lib/Assets/*.png','Lib/Assets/PayegisDID.bundle','Lib/Assets/com.baidu.idl.face.faceSDK.bundle','Lib/Assets/com.baidu.idl.face.model.bundle','Lib/Assets/CWResource.bundle','Lib/Assets/sandpaysocr.bundle','PGDatePicker/PGDatePicker.bundle']
+     'Lib' => ['Lib/Assets/*.png','Lib/Assets/PayegisDID.bundle','Lib/Assets/com.baidu.idl.face.faceSDK.bundle','Lib/Assets/com.baidu.idl.face.model.bundle','Lib/Assets/CWResource.bundle','Lib/Assets/sandpaysocr.bundle','PGDatePicker/PGDatePicker.bundle']
     }
     
     # 公开头文件 打包只公开特定的头文件
@@ -62,9 +62,9 @@ Pod::Spec.new do |s|
     s.static_framework  =  true
 
     # 载入第三方加密的点a
-    #s.vendored_libraries = 'SOCRLib/Classes/openssl/include/*.{a}'
+    #s.vendored_libraries = 'Lib/Classes/openssl/include/*.{a}'
     # 加密点a的头文件
-    #s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'SOCRLib/Classes/openssl/include/openssl/*.{h}' }
+    #s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'Lib/Classes/openssl/include/openssl/*.{h}' }
     # 链接设置 重要
     s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
